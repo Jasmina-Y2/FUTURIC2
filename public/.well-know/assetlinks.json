@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "ioHomer.homeroApp.com",
+      "sha256_cert_fingerprints": [
+        "36:56:7c:22:99:36:1e:cd:b7:86:01:19:a1:4f:90:0c:d3:a7:a0:86:3b:34:46:b6:63:e2:9d:6d:0a:2d:93:2c"
+      ]
+    }
+  }
+]

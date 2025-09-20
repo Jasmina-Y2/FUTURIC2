@@ -1,0 +1,86 @@
+.About-Section1 {
+  color: white;
+  width: 92%;
+  margin-left: 4%;
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 15px;
+}
+.About-Section1 h1 {
+  font-size: 3.5rem;
+  /*border: solid;*/
+}
+.About-Section1 p {
+  /*border: solid red;*/
+  width: 50%;
+  text-align: center;
+}
+.About-Section1 .button {
+  display: flex;
+  gap: 15px;
+}
+.About-Section1 .button button {
+  background: darkorchid;
+  border-radius: 5px;
+  color: white;
+  padding: 6px;
+  border: none;
+  cursor: pointer;
+}
+.About-Section1 .button button:hover {
+  opacity: 0.5;
+}
+.About-Section1 .button a {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 700px) {
+  .About-Section1 {
+    color: white;
+    width: 92%;
+    margin-left: 4%;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+  }
+  .About-Section1 h1 {
+    font-size: 3rem;
+    /*border: solid;*/
+  }
+  .About-Section1 p {
+    /*border: solid red;*/
+    width: 80%;
+    text-align: center;
+    font-size: 0.8rem;
+  }
+  .About-Section1 .button {
+    display: flex;
+    gap: 15px;
+  }
+  .About-Section1 .button button {
+    background: darkorchid;
+    border-radius: 5px;
+    color: white;
+    padding: 6px;
+    border: none;
+    cursor: pointer;
+  }
+  .About-Section1 .button button:hover {
+    opacity: 0.5;
+  }
+  .About-Section1 .button a {
+    display: flex;
+    align-items: center;
+  }
+}
+
+/*# sourceMappingURL=About.css.map */

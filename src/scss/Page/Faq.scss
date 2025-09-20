@@ -1,0 +1,52 @@
+$color-text:white;
+$marginAll:1rem;
+
+.rotate{
+    transition: 0.5s;
+    transform: rotate(90deg);
+}
+.normal{
+    transform: rotate(0deg);
+    transition: 0.5s;
+}
+.Faq-Section1{
+    /*border: solid red;*/
+    width: 92%;
+    margin-left: 4%;
+    height: auto;
+    color: $color-text;
+    & h1{
+        margin-left: $marginAll;
+        color: blueviolet;
+        &::after{
+            content: 'FAQ';
+            font-size: 1rem;
+            color: white;
+            margin-left: 5px;
+
+        }
+    }
+
+    & p{
+        margin-left: $marginAll;
+        font-size: 1.1rem;
+        margin-top:1rem;
+    }
+    & p:active{
+        opacity: 0.5;
+        color: rgb(175, 113, 233);
+        cursor:default;
+    }
+    & .text{
+        
+        font-size: 1rem;
+        color: #cfd5db;
+        width: 80%;
+        /*border: solid green;*/
+        background: #201f1f;
+        padding: 8px;
+        margin-left: ($marginAll+1rem);
+        margin-top: 10px;
+    }
+
+}

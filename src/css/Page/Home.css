@@ -1,0 +1,223 @@
+* {
+  user-select: none;
+}
+
+.Home-Section1 {
+  color: white;
+  width: 92%;
+  margin-left: 4%;
+  height: 800px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "welcome welcome welcome welcome card1 card2" "welcome welcome welcome welcome card1 card2" "welcome welcome welcome welcome card1 card2" "small1  small2  small3  small4  text1 text2" "small1  small2  small3  small4  text1 text2";
+  gap: 10px;
+}
+.Home-Section1-welcome {
+  grid-area: welcome;
+  background: url("../../img/bienvenido.jpeg");
+  background-size: cover;
+  background-position: bottom;
+}
+.Home-Section1-welcome-contain {
+  /*border: solid red;*/
+  max-width: 600px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.Home-Section1-welcome-contain ul {
+  display: flex;
+  font-size: 0.8rem;
+  margin: 2rem;
+  color: #d5d5d5;
+}
+.Home-Section1-welcome-contain ul li {
+  list-style: none;
+  cursor: pointer;
+}
+.Home-Section1-welcome-contain ul li:hover {
+  text-decoration: underline;
+}
+.Home-Section1-welcome-contain .text-reference {
+  /*border: solid blue;*/
+  margin: 2rem;
+}
+.Home-Section1-welcome-contain .text-reference h1 {
+  font-size: 3rem;
+}
+.Home-Section1-welcome-contain .text-reference button {
+  border: 1px solid white;
+  background: none;
+  padding: 6px;
+  cursor: default;
+}
+.Home-Section1-welcome-contain .text-reference button a {
+  color: white;
+}
+.Home-Section1-welcome-contain .text-reference button:hover {
+  transition: 0.5s;
+  background: white;
+  color: black;
+}
+.Home-Section1-welcome-contain .text-reference button a:hover {
+  color: black;
+}
+.Home-Section1-card1 {
+  grid-area: card1;
+  background: url("../../img/card1.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+.Home-Section1-card2 {
+  grid-area: card2;
+  background: url("../../img/card2.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+.Home-Section1-small1 {
+  grid-area: small1;
+  /*border: solid gold;*/
+  background: url("../../img/small1.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+.Home-Section1-small2 {
+  grid-area: small2;
+  background: url("../../img/small2.gif");
+  background-size: cover;
+  background-position: center;
+}
+.Home-Section1-small3 {
+  grid-area: small3;
+  background: url("../../img/small3.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+.Home-Section1-small4 {
+  grid-area: small4;
+  background: url("../../img/small4.gif");
+  background-size: cover;
+  background-position: center;
+}
+.Home-Section1-text1 {
+  grid-area: text1;
+  background: #222;
+}
+.Home-Section1-text2 {
+  grid-area: text2;
+  background: #222;
+}
+
+@media (max-width: 700px) {
+  .Home-Section1 {
+    color: white;
+    width: 92%;
+    margin-left: 4%;
+    height: 900px;
+    display: grid;
+    gap: 0px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "welcome welcome welcome welcome welcome welcome" "welcome welcome welcome welcome welcome welcome" "welcome welcome welcome welcome welcome welcome" "welcome welcome welcome welcome welcome welcome" "card1    card1  card1   card2   card2   card2  " "card1    card1  card1   card2   card2   card2  " "small1  small1   small1  small1 small1  small1 " "small2  small2   small2  small2 small2  small2 " "small3  small3   small3  small4 small4  small4 ";
+    grid-row-gap: 10px;
+  }
+  .Home-Section1-welcome {
+    grid-area: welcome;
+    background: url("../../img/bienvenido.jpeg");
+    background-size: cover;
+    background-position: top;
+  }
+  .Home-Section1-welcome-contain {
+    max-width: 600px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .Home-Section1-welcome-contain ul {
+    display: flex;
+    font-size: 0.8rem;
+    margin: 2rem;
+    color: #d5d5d5;
+  }
+  .Home-Section1-welcome-contain ul li {
+    list-style: none;
+    cursor: pointer;
+  }
+  .Home-Section1-welcome-contain ul li:hover {
+    text-decoration: underline;
+  }
+  .Home-Section1-welcome-contain .text-reference {
+    margin: 1rem;
+  }
+  .Home-Section1-welcome-contain .text-reference h1 {
+    font-size: 3rem;
+  }
+  .Home-Section1-welcome-contain .text-reference button {
+    border: 1px solid white;
+    background: none;
+    padding: 6px;
+    cursor: default;
+  }
+  .Home-Section1-welcome-contain .text-reference button a {
+    color: white;
+  }
+  .Home-Section1-welcome-contain .text-reference button:hover {
+    transition: 0.5s;
+    background: white;
+    color: black;
+  }
+  .Home-Section1-welcome-contain .text-reference button a:hover {
+    color: black;
+  }
+  .Home-Section1-card1 {
+    grid-area: card1;
+    background: url("../../img/card1.jpeg");
+    background-size: cover;
+    background-position: center;
+    margin-right: 5px;
+  }
+  .Home-Section1-card2 {
+    grid-area: card2;
+    background: url("../../img/card2.jpeg");
+    background-size: cover;
+    background-position: center;
+    margin-left: 5px;
+  }
+  .Home-Section1-small1 {
+    grid-area: small1;
+    background: url("../../img/small1.jpeg");
+    background-size: cover;
+    background-position: center;
+  }
+  .Home-Section1-small2 {
+    grid-area: small2;
+    background: url("../../img/small2.gif");
+    background-size: cover;
+    background-position: center;
+  }
+  .Home-Section1-small3 {
+    grid-area: small3;
+    background: url("../../img/small3.jpeg");
+    background-size: cover;
+    background-position: center;
+  }
+  .Home-Section1-small4 {
+    grid-area: small4;
+    background: url("../../img/small4.gif");
+    background-size: cover;
+    background-position: center;
+  }
+  .Home-Section1-text1 {
+    grid-area: text1;
+    background: #222;
+  }
+  .Home-Section1-text2 {
+    grid-area: text2;
+    background: #222;
+  }
+}
+
+/*# sourceMappingURL=Home.css.map */

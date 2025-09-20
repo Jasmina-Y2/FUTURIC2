@@ -1,0 +1,212 @@
+$color-text:white;
+$paddig:.8rem;
+$margentext:1rem;
+
+.text-special{
+    color: rgb(240, 196, 83);
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.Blog-Section1{
+    color: $color-text;
+    /*border: solid red;*/
+    width: 92%;
+    height: 800px;
+    margin-left: 4%;
+    display: grid;
+    gap: .5rem;
+    grid-template-areas: "content static";
+    grid-template-columns: 70% 30%;
+    &-Content{
+        border: solid green;
+        background: rgb(3 7 18/1);
+        border: 1px solid rgb(17 24 39/1);
+        grid-area: content;
+        & .text-all{
+            margin: 3rem;
+            /*border: solid red;*/
+            & h1{
+                margin-top: $margentext;
+                font-size: 2.3rem;
+            }
+            & .sub-title{
+                color: #5c5c5c;
+            }
+            & .autor{
+                color: #a54dd1;
+
+            }
+            & .img{
+                /*border: solid brown;*/
+                margin-top: $margentext;
+                width: 50%;
+                height: 250px;
+                background: url("../../img/deno.gif");
+                background-position: center;
+                background-size: cover;
+                
+            }
+            & .text{
+                margin-top: ($margentext*2);
+                width: 80%;
+                color: #b4b1b1;
+            }
+
+        }
+    }
+    &-static{
+        /*border: solid purple;*/
+        grid-area: static;
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+        & .Blog-card{
+            cursor: default;
+            background:  rgb(3 7 18/1);
+            border: 1px solid rgb(17 24 39/1);
+            padding:$paddig;
+            border-radius: 10px;
+            & h3{
+                font-size: 1.2rem;
+                font-weight: 300;
+            }
+            & div{ 
+                display: flex;
+                justify-content: space-between;
+                color: #5c5c5c;
+                & button{
+                    border:none;
+                    background: rgb(64, 64, 233);
+                    color: $color-text;
+                    padding: .3rem;
+                }
+                & .purple{
+                    background: #a54dd1;
+                }
+                
+                & p{
+                    font-size: .8rem;
+                    font-weight: 300;
+                }
+            }
+            & p {
+                font-size: .8rem;
+            }
+            & .autor{
+                color: #a54dd1;
+                display: flex;
+                align-items: center;
+            }
+            &:hover{
+                transition: 0.2s;
+                padding: ($paddig + .1rem );
+                opacity: 0.6;
+            }
+        }
+
+    }
+}
+
+@media (max-width: 700px) {
+    .Blog-Section1{
+        color: $color-text;
+        /*border: solid red;*/
+        width: 92%;
+        height: 800px;
+        margin-left: 4%;
+        display: grid;
+        gap: .5rem;
+        grid-template-areas: "content content"
+                             "static static";
+        grid-template-columns: 70% 30%;
+        &-Content{
+            border: solid green;
+            background: rgb(3 7 18/1);
+            border: 1px solid rgb(17 24 39/1);
+            grid-area: content;
+            & .text-all{
+                margin: .8rem;
+                /*border: solid red;*/
+                & h1{
+                    margin-top: $margentext;
+                    font-size: 2.3rem;
+                }
+                & .sub-title{
+                    color: #5c5c5c;
+                }
+                & .autor{
+                    color: #a54dd1;
+    
+                }
+                & .img{
+                    /*border: solid brown;*/
+                    margin-top: $margentext;
+                    width: 90%;
+                    height: 250px;
+                    background: url("../../img/deno.gif");
+                    background-position: center;
+                    background-size: cover;
+                    
+                }
+                & .text{
+                    margin-top: ($margentext*2);
+                    width: 95%;
+                    color: #b4b1b1;
+                }
+    
+            }
+        }
+        &-static{
+            /*border: solid purple;*/
+            grid-area: static;
+            display: flex;
+            flex-direction: column;
+            gap: .5rem;
+            & .Blog-card{
+                cursor: default;
+                background:  rgb(3 7 18/1);
+                border: 1px solid rgb(17 24 39/1);
+                padding:$paddig;
+                border-radius: 10px;
+                & h3{
+                    font-size: 1.2rem;
+                    font-weight: 300;
+                }
+                & div{ 
+                    display: flex;
+                    justify-content: space-between;
+                    color: #5c5c5c;
+                    & button{
+                        border:none;
+                        background: rgb(64, 64, 233);
+                        color: $color-text;
+                        padding: .3rem;
+                    }
+                    & .purple{
+                        background: #a54dd1;
+                    }
+                    
+                    & p{
+                        font-size: .8rem;
+                        font-weight: 300;
+                    }
+                }
+                & p {
+                    font-size: .8rem;
+                }
+                & .autor{
+                    color: #a54dd1;
+                    display: flex;
+                    align-items: center;
+                }
+                &:hover{
+                    transition: 0.2s;
+                    padding: ($paddig + .1rem );
+                    opacity: 0.6;
+                }
+            }
+    
+        }
+    }
+}

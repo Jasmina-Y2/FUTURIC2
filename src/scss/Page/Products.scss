@@ -1,0 +1,100 @@
+$marginLeft :.7rem;
+$text-color:white;
+
+.Product-Section1{
+    color: $text-color;
+    /*border: solid red;*/
+    width: 92%;
+    margin-left: 4%;
+    &-content{
+        /*border: solid green;*/
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        & .card{
+            margin: 10px;
+            /*border: solid brown;*/
+            background:  rgb(3 7 18/1);
+            border: 1px solid rgb(17 24 39/1);
+            border-radius: 10px;
+            width: 250px;
+            cursor: default;
+            &:hover{
+                margin-top: 5px;
+                transition: 0.1s;
+            }
+            & .image{
+                /*border: solid purple;*/
+                height: 150px;
+                background: url("../../img/small2.gif");
+                background-position: center;
+                background-size: contain;
+            }
+            & .title{
+                /*border: solid gold;*/
+                margin-left:$marginLeft;
+                margin-right: $marginLeft;
+                margin-top: $marginLeft;
+                font-size: 1.2rem;
+            }
+            & .sub-text{
+                
+                margin-left:$marginLeft;
+                margin-right: $marginLeft;
+                font-size: .7rem;
+                font-weight: 100;
+                color: #999898;
+            }
+            & .text{
+                
+                margin-left:$marginLeft;
+                margin-right: $marginLeft;
+                font-size: .85rem;
+                font-weight: 100;
+                color: #cccccc;
+
+            }
+            & span{
+                
+                margin-left:$marginLeft;
+                margin-right: $marginLeft;
+                /*border: solid green;*/
+                font-size: .9rem;
+                font-weight: 100;
+            }
+            & .button{
+                
+                margin-left:$marginLeft;
+                margin-right: $marginLeft;
+                margin-bottom: $marginLeft;
+                margin-top: $marginLeft;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                & .ver{
+                    border: 1px solid ;
+                    color: black;
+                    background: none;
+                    color: purple;
+                    padding: 3px;
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                }
+                & .tiempo{
+                    
+                    background: #222;
+                    border: none;
+                    padding: 3px;
+                    color: $text-color;
+                    border-radius: 5px;
+                }
+                & .ver:hover{
+                    transition: 0.3s;
+                    opacity: 0.4;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,92 @@
+.Product-Section1 {
+  color: white;
+  /*border: solid red;*/
+  width: 92%;
+  margin-left: 4%;
+}
+.Product-Section1-content {
+  /*border: solid green;*/
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.Product-Section1-content .card {
+  margin: 10px;
+  /*border: solid brown;*/
+  background: rgb(3, 7, 18);
+  border: 1px solid rgb(17, 24, 39);
+  border-radius: 10px;
+  width: 250px;
+  cursor: default;
+}
+.Product-Section1-content .card:hover {
+  margin-top: 5px;
+  transition: 0.1s;
+}
+.Product-Section1-content .card .image {
+  /*border: solid purple;*/
+  height: 150px;
+  background: url("../../img/small2.gif");
+  background-position: center;
+  background-size: contain;
+}
+.Product-Section1-content .card .title {
+  /*border: solid gold;*/
+  margin-left: 0.7rem;
+  margin-right: 0.7rem;
+  margin-top: 0.7rem;
+  font-size: 1.2rem;
+}
+.Product-Section1-content .card .sub-text {
+  margin-left: 0.7rem;
+  margin-right: 0.7rem;
+  font-size: 0.7rem;
+  font-weight: 100;
+  color: #999898;
+}
+.Product-Section1-content .card .text {
+  margin-left: 0.7rem;
+  margin-right: 0.7rem;
+  font-size: 0.85rem;
+  font-weight: 100;
+  color: #cccccc;
+}
+.Product-Section1-content .card span {
+  margin-left: 0.7rem;
+  margin-right: 0.7rem;
+  /*border: solid green;*/
+  font-size: 0.9rem;
+  font-weight: 100;
+}
+.Product-Section1-content .card .button {
+  margin-left: 0.7rem;
+  margin-right: 0.7rem;
+  margin-bottom: 0.7rem;
+  margin-top: 0.7rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.Product-Section1-content .card .button .ver {
+  border: 1px solid;
+  color: black;
+  background: none;
+  color: purple;
+  padding: 3px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.Product-Section1-content .card .button .tiempo {
+  background: #222;
+  border: none;
+  padding: 3px;
+  color: white;
+  border-radius: 5px;
+}
+.Product-Section1-content .card .button .ver:hover {
+  transition: 0.3s;
+  opacity: 0.4;
+}
+
+/*# sourceMappingURL=Products.css.map */

@@ -1,0 +1,125 @@
+.off-div {
+  display: none;
+}
+
+fotter {
+  margin-bottom: 2em;
+  background: #1b1a1a;
+  color: white;
+  /*border: solid red;*/
+  width: 92%;
+  height: auto;
+  margin-left: 4%;
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+}
+fotter .title {
+  font-size: 2rem;
+  color: #b05dff;
+  margin-left: 2rem;
+  margin-top: 2rem;
+}
+fotter .title-sub {
+  color: #939292;
+  margin-left: 2rem;
+  font-size: 0.7rem;
+}
+fotter .content-references {
+  margin-top: 2rem;
+  margin-left: 2rem;
+  /*border: solid purple;*/
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+fotter .content-references div ul {
+  /*border: solid;*/
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+fotter .content-references div ul li {
+  cursor: pointer;
+  list-style: none;
+  font-size: 0.8rem;
+  color: #b9b4b4;
+}
+fotter .content-references div ul li:hover {
+  opacity: 0.5;
+  text-decoration: line-through;
+}
+fotter .content-references div p {
+  font-size: 1.1rem;
+  color: #7c0de4;
+}
+fotter .futuric-copy {
+  margin-left: 2rem;
+  font-size: 0.7rem;
+}
+
+@media (max-width: 700px) {
+  fotter {
+    margin-bottom: 2em;
+    background: #1b1a1a;
+    color: white;
+    /*border: solid red;*/
+    width: 92%;
+    height: auto;
+    margin-left: 4%;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  fotter .title {
+    font-size: 2rem;
+    margin-left: 0rem;
+    margin-top: 2rem;
+  }
+  fotter .title-sub {
+    color: #939292;
+    margin-left: 0rem;
+    font-size: 0.7rem;
+  }
+  fotter .content-references {
+    margin-left: 0rem;
+    /*border: solid purple;*/
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  fotter .content-references div {
+    /*border: solid salmon;*/
+    padding: 20px;
+  }
+  fotter .content-references div ul {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  fotter .content-references div ul li {
+    cursor: pointer;
+    font-size: 0.8rem;
+    color: #b9b4b4;
+  }
+  fotter .content-references div ul li:hover {
+    opacity: 0.5;
+    text-decoration: line-through;
+  }
+  fotter .content-references div p {
+    font-size: 1.1rem;
+    color: #7c0de4;
+  }
+  fotter .futuric-copy {
+    margin-left: 0rem;
+    font-size: 0.7rem;
+  }
+}
+
+/*# sourceMappingURL=Footer.css.map */

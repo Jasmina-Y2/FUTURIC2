@@ -1,0 +1,134 @@
+$text-coolor:white;
+$margin-all:2rem;
+
+.off-div{
+    display: none;
+}
+
+fotter{
+    margin-bottom: 2em;
+    background: #1b1a1a;
+    color: $text-coolor;
+    /*border: solid red;*/
+    width: 92%;
+    height: auto;
+    margin-left: 4%;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    & .title{
+        font-size: 2rem;
+        color: #b05dff;
+        margin-left: $margin-all;
+        margin-top: 2rem;
+        &-sub{
+            color: #939292;
+            margin-left: $margin-all;
+            font-size: 0.7rem;
+        }
+    }
+    & .content-references{
+        
+        margin-top: 2rem;
+        margin-left: $margin-all;
+        /*border: solid purple;*/
+        width: 70%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        & div{
+            & ul{
+                /*border: solid;*/
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                & li{
+                    cursor: pointer;
+                    list-style: none;
+                    font-size: .8rem;
+                    color: #b9b4b4;
+                }
+                & li:hover{
+                    opacity: 0.5;
+                    text-decoration: line-through;
+                }
+            }
+            & p{
+                font-size: 1.1rem;
+                color: #7c0de4;
+            }
+        }
+    }
+    & .futuric-copy{
+        margin-left: $margin-all;
+        font-size: 0.7rem;
+    }
+    
+}
+
+@media (max-width: 700px) {
+    fotter{
+        margin-bottom: 2em;
+        background: #1b1a1a;
+        color: $text-coolor;
+        /*border: solid red;*/
+        width: 92%;
+        height: auto;
+        margin-left: 4%;
+        margin-top: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        & .title{
+            font-size: 2rem;
+            margin-left: 0rem;
+            margin-top: 2rem;
+            &-sub{
+                color: #939292;
+                margin-left: 0rem;
+                font-size: 0.7rem;
+            }
+        }
+        & .content-references{
+            
+            margin-left: 0rem;
+            /*border: solid purple;*/
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            
+            justify-content: space-between;
+            width: 100%;
+            flex-wrap: wrap;
+            justify-content: center;
+            & div{
+                /*border: solid salmon;*/
+                padding: 20px;
+                & ul{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+                    & li{
+                        cursor: pointer;
+                        font-size: .8rem;
+                        color: #b9b4b4;
+                    }
+                    & li:hover{
+                        opacity: 0.5;
+                        text-decoration: line-through;
+                    }
+                }
+                & p{
+                    font-size: 1.1rem;
+                    color: #7c0de4;
+                }
+            }
+        }
+        & .futuric-copy{
+            margin-left: 0rem;
+            font-size: 0.7rem;
+        }
+        
+    }
+
+}

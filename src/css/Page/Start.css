@@ -1,0 +1,49 @@
+.Contact-Section1 {
+  color: white;
+  /*border: solid red;*/
+  width: 92%;
+  margin-left: 4%;
+}
+.Contact-Section1 h2 {
+  margin-left: 2rem;
+}
+.Contact-Section1 form {
+  /*border: solid green;*/
+  margin: 2rem;
+  width: 80%;
+}
+.Contact-Section1 form fieldset input {
+  border-radius: 20px;
+  width: 80%;
+}
+.Contact-Section1 form fieldset .style-input {
+  width: 80%;
+  padding: 10px;
+  outline: none;
+  border: 1px solid white;
+  margin: 10px;
+  background: none;
+  color: white;
+}
+.Contact-Section1 form button {
+  padding: 0.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  color: white;
+  border: none;
+  background: rgb(173, 13, 173);
+}
+.Contact-Section1 .text-2 {
+  font-size: 1.5rem;
+  color: azure;
+  margin-left: 2rem;
+}
+.Contact-Section1 ul {
+  /*border: solid red;*/
+  margin-left: 2rem;
+}
+.Contact-Section1 ul li {
+  margin-left: 2rem;
+}
+
+/*# sourceMappingURL=Start.css.map */
