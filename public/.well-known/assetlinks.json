@@ -3,7 +3,7 @@
     "relation": ["delegate_permission/common.handle_all_urls"],
     "target": {
       "namespace": "android_app",
-      "package_name": "ioHomer.homeroApp.com",
+      "package_name": "app.homero.xplr9012",
       "sha256_cert_fingerprints": [
         "FB:10:67:17:85:0B:88:49:4B:F4:52:6A:CA:6E:DC:5F:D3:83:55:78:2C:B1:16:FE:B9:55:C4:95:85:6B:72:56"
       ]
