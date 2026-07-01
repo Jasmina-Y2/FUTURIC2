@@ -2,7 +2,6 @@ import Header from "../components/Header.jsx";
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer.jsx";
 import '../css/Page/Home.css'
-import { useState } from "react";
 
 
 function Home(){
