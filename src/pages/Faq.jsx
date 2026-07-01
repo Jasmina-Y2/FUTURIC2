@@ -29,7 +29,7 @@ function Start(){
     var [conteo6,setconteo6] = useState(0)
 
     const Answer1 = () => {
-        if(conteo1 == 0 ){
+        if(conteo1 === 0 ){
             
         setAns1(textpretty)
         setrotate1("rotate")
@@ -60,7 +60,7 @@ function Start(){
 
     const Answer2 = () => {
         
-        if(conteo2 == 0 ){
+        if(conteo2 === 0 ){
             
             setAns2(textpretty)
             setrotate2("rotate")
@@ -91,7 +91,7 @@ function Start(){
     }
     const Answer3 = () => {
 
-        if(conteo3 == 0 ){
+        if(conteo3 === 0 ){
             
             setAns3(textpretty)
             setrotate3("rotate")
@@ -123,7 +123,7 @@ function Start(){
 
     const Answer4 = () => {
 
-        if(conteo4 == 0 ){
+        if(conteo4 === 0 ){
             
             setAns4(textpretty)
             setrotate4("rotate")
@@ -154,7 +154,7 @@ function Start(){
 
     const Answer5 = () => {
 
-        if(conteo5 == 0 ){
+        if(conteo5 === 0 ){
             
             setAns5(textpretty)
             setrotate5("rotate")
@@ -185,7 +185,7 @@ function Start(){
 
     const Answer6 = () => {
 
-        if(conteo6 == 0 ){
+        if(conteo6 === 0 ){
             
             setAns6(textpretty)
             setrotate6("rotate")
