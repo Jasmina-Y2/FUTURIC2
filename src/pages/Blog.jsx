@@ -1,5 +1,4 @@
 import Header from "../components/Header.jsx";
-import Footer from "../components/Footer.jsx";
 import '../css/Page/Blog.css'
 
 import { SiDeno } from 'react-icons/si';
